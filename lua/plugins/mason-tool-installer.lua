@@ -10,7 +10,6 @@ return {
         "kube-linter",
         "lua-language-server",
         "prettier",
-        "rust_analyzer",
         "shfmt",
         "stylua",
         "tailwindcss-language-server",

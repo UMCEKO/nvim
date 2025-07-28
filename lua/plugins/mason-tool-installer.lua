@@ -3,7 +3,6 @@ return {
   config = function()
     require("mason-tool-installer").setup({
       ensure_installed = {
-        "docker-compose-language-service",
         "dockerfile-language-server",
         "eslint-lsp",
         "eslint_d",
@@ -16,9 +15,11 @@ return {
         "stylua",
         "tailwindcss-language-server",
         "typescript-language-server",
+        "yamlls",
+        "just-lsp",
       },
       run_on_start = true,
-      auto_update = false,
+      auto_update = true,
     })
   end,
 }

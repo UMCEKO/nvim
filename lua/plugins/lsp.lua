@@ -17,30 +17,7 @@ return {
         -- Final, simplified, and working configuration for the YAML language server
         -- Inside the 'servers' table in lua/plugins/lsp.lua
         rust_analyzer = {
-          settings = {
-            ["rust-analyzer"] = {
-              cargo = {
-                allFeatures = true,
-              },
-              checkOnSave = {
-                command = "check", -- or "clippy"
-              },
-              completion = {
-                autoimport = {
-                  enable = true,
-                },
-              },
-              imports = {
-                granularity = {
-                  group = "module",
-                },
-                prefix = "self",
-              },
-              procMacro = {
-                enable = true,
-              },
-            },
-          },
+          enabled = false,
         },
         yamlls = {
           settings = {
@@ -59,9 +36,7 @@ return {
                   "k8s/*",
                   "kube/*",
                 },
-                ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.27.0-standalone-strict/all.json"] = "docker-compose.yaml",
-                -- 3. The CRITICAL FIX: This finds the built-in Kubernetes schema
-                --    from the store and disables it, preventing the conflict.
+                ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "docker-compose.yaml",
                 ["kubernetes"] = "",
               },
             },

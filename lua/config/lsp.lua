@@ -9,3 +9,10 @@ lspconfig.postgres_lsp.setup({
   },
   filetypes = { "sql", "pgsql", "postgres", "sql.dockerfile" },
 })
+vim.diagnostic.config({
+  float = {
+    focusable = true, -- Set this to true
+    source = true,
+    border = "rounded",
+  },
+})

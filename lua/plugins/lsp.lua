@@ -11,14 +11,6 @@ return {
     },
     opts = {
       servers = {
-        -- Your other LSP servers, like protols
-        protols = {},
-
-        -- Final, simplified, and working configuration for the YAML language server
-        -- Inside the 'servers' table in lua/plugins/lsp.lua
-        rust_analyzer = {
-          enabled = false,
-        },
         yamlls = {
           settings = {
             yaml = {
